@@ -1,4 +1,5 @@
 grid_shape = (80, 80)
+@profile
 def evolve(grid, dt, D=1.0):
     xmax, ymax = grid_shape
     new_grid = [[0.0] * ymax for x in range(xmax)]
@@ -28,7 +29,6 @@ def run_experiment(num_iterations):
 
     # Evolve the initial conditions
     for i in range(num_iterations):
-        print("i = ", i)
         grid = evolve(grid, 0.1)
 
-run_experiment(10)
+run_experiment(100)

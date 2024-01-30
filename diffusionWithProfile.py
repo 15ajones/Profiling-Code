@@ -29,7 +29,6 @@ def run_experiment(num_iterations):
 
     # Evolve the initial conditions
     for i in range(num_iterations):
-        print("i = ", i)
         grid = evolve(grid, 0.1)
 
-run_experiment(10)
+run_experiment(100)
