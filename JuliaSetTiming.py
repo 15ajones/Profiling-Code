@@ -16,7 +16,6 @@ def timefn(fn):
         result = fn(*args, **kwargs)
         t2 = timer()
         timing = t2-t1
-        print("function took this long: ")
         print(timing)
         
     return measure_time
